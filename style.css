@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+
+body{
+    background: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+}
+
+h1{
+  text-align: center;  
+  color: #cc8323;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 125px;
+
+}
+
+.container{
+    background-color: #d1d1d1;
+    width: 90%;
+    max-width: 650px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 100px auto 0;
+  
+}
+
+.input-task{
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.button-add-task{
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    background-color: #003329;
+    color: #ffff;
+    font-size: 17px;
+    padding: 0 15px;
+    cursor: pointer;
+    float: right;
+    font-weight: 700;
+    
+   
+}
+
+.button-add-task:hover{
+    opacity: 0.8;
+}
+
+.button-add-task:active{
+    opacity: 0.6;
+}
+
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task{
+    background-color: #f2f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 95px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 18px;
+   
+
+}
+
+.done{
+    background-color: #09614f;
+    text-decoration: line-through;
+}
+
+p{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+img{
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+   
+}
+
+.p-footer{
+    font-size: 22px;
+    font-weight: 400;
+    color: #ffff;
+    margin-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffff;
+}
+
+footer a:hover{
+    text-decoration: underline;
+
+}
+
+/*Tela mobile */
+
+@media sreen and (min-width: 320px){
+    header{
+        width: 100%;
+    }
+
+  
+    .task{
+        height: 95px;
+    }
+}
+
+
+/*Medias tela tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        margin-top: 50px;
+    }
+}
+
+/*Medias tela desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-top: 100px;
+    }
+}
+
+/*Media telas grandes */
+@media sreen and (min-width: 1200px) {
+    .container {
+        margin-top: 150px;
+    }
+}
