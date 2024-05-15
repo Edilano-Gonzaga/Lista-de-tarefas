@@ -57,7 +57,7 @@ function deletarTask(index){
 function reloadTask (){
     const estoreLocationTasks = localStorage.getItem('listcompleted')
 
-    myListOfItems = JSON.parse(estoreLocationTasks)
+    myListOfItems = JSON.parse(estoreLocationTasks) || [];
 
     
     showNewTaskInserted()
